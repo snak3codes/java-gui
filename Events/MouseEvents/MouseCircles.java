@@ -16,6 +16,13 @@ public class MouseCircles {
 		handleExit(frame3);
 	}
 
+	/*
+	 * Here the anonymous inner class extends the WindowAdapter class which contains
+	 * trivial versions of all seven method required to implement the WindowListener
+	 * interface. The only one of these methods that we want to override is 
+	 * windowClosing which we rewrite so that it executes the statement
+	 * System.exit(0), causing the program to halt.
+	 */
 	public static void handleExit(JFrame frame) {
 		frame.addWindowListener((new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
