@@ -47,7 +47,9 @@ public class GUIGreet {
 		/*
 		 * In order to manage the contents of a window, frames delegate the
 		 * responsibility to a content pane, an object that is automatically associated
-		 * with each frame
+		 * with each frame. NOTE: The getContentPane method returns a reference to a
+		 * Container object; we can cast this to a JPanel object reference because
+		 * JPanel is a subclass of JComponent which is a subclass of Container
 		 */
 		JPanel pane = (JPanel) frame.getContentPane();
 
